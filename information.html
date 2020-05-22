@@ -19,6 +19,48 @@ body {
   padding: 20px;
   text-align: center;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 
 /* Style the top navigation bar */
 
@@ -50,6 +92,11 @@ body {
   <h1>About us</h1>
   <p>Urban Malaria Scheme,GHMC</p>
 </div>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="Data.html">Data</a>
+  <a href="information.html">Information</a>
+  </div>
 <div class="row">
   <div class="column">
     <h2>INCEPTION OF URBAN MALARIA SCHEME</h2>
